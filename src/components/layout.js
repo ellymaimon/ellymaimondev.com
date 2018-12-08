@@ -9,16 +9,19 @@ import {
   faLinkedin,
   faBehanceSquare,
 } from '@fortawesome/free-brands-svg-icons'
+import PageTransition from 'gatsby-plugin-page-transitions'
 
 library.add(faEnvelopeSquare, faGithubSquare, faLinkedin, faBehanceSquare)
 
 export default ({ children }) => (
-  <div
-    className={css`
-      margin: ${rhythm(2)};
-      color: #e0e2db;
-    `}
-  >
-    {children}
-  </div>
+  <PageTransition>
+    <div
+      className={css`
+        margin: ${rhythm(2)};
+        color: #e0e2db;
+      `}
+    >
+      {children}
+    </div>
+  </PageTransition>
 )

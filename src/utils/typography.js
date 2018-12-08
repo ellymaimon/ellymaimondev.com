@@ -2,6 +2,7 @@ import Typography from 'typography'
 
 const typography = new Typography({
   title: 'Royale with Cheese',
+  baseFontSize: '18px',
   scaleRatio: 2,
   googleFonts: [
     {

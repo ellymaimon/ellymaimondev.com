@@ -2,3 +2,12 @@ body {
   background-color: #191716;
   /* background-color: #2e5266; */
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}

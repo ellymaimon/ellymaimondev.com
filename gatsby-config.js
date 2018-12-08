@@ -10,5 +10,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500,
+      },
+    },
   ],
 }

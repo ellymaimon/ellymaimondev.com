@@ -1,32 +1,28 @@
 import React from 'react'
 import Layout from '../components/layout'
+import { css } from 'emotion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const container = {
-  maxWidth: '750px',
-  width: '100%',
-  margin: '100px auto 0 auto',
-  textAlign: 'center',
-}
+const container = css`
+  max-width: 750px;
+  width: 100%;
+  margin: 100px auto 0 auto;
+  text-align: center;
+`
 
-const socialMedia = {
-  width: '50%',
-  margin: '0 auto',
-  display: 'flex',
-  justifyContent: 'space-evenly',
-}
-
-// const socialMediaIcon = {
-//   textDecoration: 'none',
-//   color: 'inherit'
-// }
+const socialMedia = css`
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+`
 
 export default () => (
   <Layout>
-    <div style={container}>
+    <div className={container}>
       <h1>Elly Maimon</h1>
       <h3>Software + Web Developer / Graphic Designer</h3>
-      <div style={socialMedia}>
+      <div className={socialMedia}>
         <a
           href="mailto:eliranmaimon@gmail.com"
           target="_blank"

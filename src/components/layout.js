@@ -4,9 +4,13 @@ import { css } from 'emotion'
 import { rhythm } from '../utils/typography'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import {
+  faGithubSquare,
+  faLinkedin,
+  faBehanceSquare,
+} from '@fortawesome/free-brands-svg-icons'
 
-library.add(faEnvelopeSquare, faGithubSquare, faLinkedin)
+library.add(faEnvelopeSquare, faGithubSquare, faLinkedin, faBehanceSquare)
 
 export default ({ children }) => (
   <div

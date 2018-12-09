@@ -1,6 +1,8 @@
 body {
   background-color: #191716;
-  /* background-color: #2e5266; */
+  /* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased; */
 }
 
 a {

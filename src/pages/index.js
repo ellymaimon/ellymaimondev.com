@@ -94,6 +94,10 @@ export default () => (
       <Link to="/projects/" className={navLink}>
         <h3>PROJECTS</h3>
       </Link>
+      <br />
+      <Link to="/skills/" className={navLink}>
+        <h3>SKILLS</h3>
+      </Link>
     </div>
   </Layout>
 )

@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Particles from 'react-particles-js'
+import { particlesConfig } from '../utils/particlesjs-config'
 
 library.add(faEnvelopeSquare, faGithubSquare, faLinkedin, faBehanceSquare)
 
@@ -23,6 +24,7 @@ export default ({ children }) => (
         position: fixed;
         z-index: -1;
       `}
+      params={particlesConfig}
     />
     <div
       className={css`

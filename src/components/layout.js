@@ -10,11 +10,20 @@ import {
   faBehanceSquare,
 } from '@fortawesome/free-brands-svg-icons'
 import PageTransition from 'gatsby-plugin-page-transitions'
+import Particles from 'react-particles-js'
 
 library.add(faEnvelopeSquare, faGithubSquare, faLinkedin, faBehanceSquare)
 
 export default ({ children }) => (
   <PageTransition>
+    <Particles
+      className={css`
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+      `}
+    />
     <div
       className={css`
         margin: ${rhythm(2)};

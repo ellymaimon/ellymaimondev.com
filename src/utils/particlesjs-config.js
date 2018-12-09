@@ -42,7 +42,7 @@ export const particlesConfig = {
     },
     move: {
       enable: true,
-      speed: 4.734960581453156,
+      speed: 3,
       direction: 'none',
       random: false,
       straight: false,

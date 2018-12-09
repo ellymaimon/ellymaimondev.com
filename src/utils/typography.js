@@ -15,6 +15,7 @@ const typography = new Typography({
     },
   ],
   headerFontFamily: ['Copse', 'serif'],
+  headerWeight: 'normal',
   bodyFontFamily: ['Lato', 'sans-serif'],
 })
 

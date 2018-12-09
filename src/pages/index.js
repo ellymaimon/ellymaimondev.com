@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Navigation from '../components/navigation'
 import { css } from 'emotion'
 import { rhythm } from '../utils/typography'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -32,17 +32,6 @@ const socialMediaIcon = css`
 
   :hover {
     color: #ffcb47;
-    transform: scale(1.1, 1.1);
-  }
-`
-
-const navLink = css`
-  display: inline-block;
-  transition: 0.5s;
-  transition-timing-function: ease;
-
-  :hover {
-    color: #70a9a1;
     transform: scale(1.1, 1.1);
   }
 `
@@ -87,17 +76,7 @@ export default () => (
         </a>
       </div>
 
-      <Link to="/about/" className={navLink}>
-        <h3>ABOUT</h3>
-      </Link>
-      <br />
-      <Link to="/projects/" className={navLink}>
-        <h3>PROJECTS</h3>
-      </Link>
-      <br />
-      <Link to="/skills/" className={navLink}>
-        <h3>SKILLS</h3>
-      </Link>
+      <Navigation isNotHome='false'/>
     </div>
   </Layout>
 )

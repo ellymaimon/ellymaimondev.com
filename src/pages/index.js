@@ -8,8 +8,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const container = css`
   max-width: 750px;
   width: 100%;
-  margin: 100px auto 0 auto;
+  height: 50%;
   text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 `
 
 const socialMediaDiv = css`

@@ -8,6 +8,7 @@ import whatsOnTap from '../images/whatsontap.png'
 import dungeonEscape from '../images/dungeon.png'
 import circa from '../images/circa.png'
 import citrus from '../images/citrus.png'
+import bread from '../images/bread.png'
 
 const container = css`
   display: grid;
@@ -27,14 +28,50 @@ export default () => (
     <div className={container}>
       {/* First Column */}
       <div>
-        <Project projectTitle="Circa" imageUrl={circa} />
-        <Project projectTitle="What's On Tap?" imageUrl={whatsOnTap} />
+        <Project
+          projectTitle="Bread Baker's Apprentice"
+          imageUrl={bread}
+          liveSiteLink="https://github.com/ellymaimon/bread-bakers-apprentice"
+          liveSiteLinkText="Check out the Github repo"
+          description="(In Progress) Recipe manager for bread bakers"
+          technologies="React Redux SemanticUI"
+        />
+        <Project
+          projectTitle="Circa"
+          imageUrl={circa}
+          liveSiteLink="https://vimeo.com/305578330"
+          liveSiteLinkText="Check out a quick sample"
+          description="Internal flexible revenue and ROI reporting"
+          technologies="NodeJS React Firestore"
+        />
+        <Project
+          projectTitle="Citrus Ciderhouse"
+          imageUrl={citrus}
+          liveSiteLink="https://angular-team-week.firebaseapp.com/"
+          liveSiteLinkText="Check out the live site"
+          description="CMS for a fictional Cider Bar"
+          technologies="Angular TypeScript Firebase"
+        />
       </div>
 
       {/* Second Column */}
       <div>
-        <Project projectTitle="Dungeon Escape" imageUrl={dungeonEscape} />
-        <Project projectTitle="Citrus Ciderhouse" imageUrl={citrus} />
+        <Project
+          projectTitle="What's On Tap?"
+          imageUrl={whatsOnTap}
+          liveSiteLink="http://whats-on-tap-app.herokuapp.com/"
+          liveSiteLinkText="Check out the live site"
+          description="Find and maintain a list of your favorite beers"
+          technologies="C# .NET Entity MySQL"
+        />
+        <Project
+          projectTitle="Dungeon Escape"
+          imageUrl={dungeonEscape}
+          liveSiteLink="https://ellymaimon.github.io/Dungeon-Escape/"
+          liveSiteLinkText="Play the game! (turn on volume)"
+          description="A 2D point-and-click RPG adventure game"
+          technologies="VanillaJS jQuery Photoshop"
+        />
       </div>
     </div>
   </Layout>

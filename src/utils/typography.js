@@ -10,13 +10,14 @@ const typography = new Typography({
       styles: ['400'],
     },
     {
-      name: 'Lato',
+      name: 'Roboto Condensed',
       styles: ['400'],
     },
   ],
   headerFontFamily: ['Copse', 'serif'],
   headerWeight: 'normal',
-  bodyFontFamily: ['Lato', 'sans-serif'],
+  bodyFontFamily: ['Roboto Condensed', 'sans-serif'],
+  blockMarginBottom: '1em',
 })
 
 export default typography

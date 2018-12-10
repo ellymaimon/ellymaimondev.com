@@ -32,23 +32,23 @@ const activeNavLink = css`
 
 export default ({ showHome }) => {
   return (
-  <div className={navStyles}>
-    {showHome === 'true' && (
-      <Link className={navLink} to="/">
-        HOME
+    <div className={navStyles}>
+      {showHome === 'true' && (
+        <Link className={navLink} to="/">
+          HOME
+        </Link>
+      )}
+      <Link activeClassName={activeNavLink} className={navLink} to="/about">
+        ABOUT
       </Link>
-    )}
-    <Link activeClassName={activeNavLink} className={navLink} to="/about">
-      ABOUT
-    </Link>
-    <Link activeClassName={activeNavLink} className={navLink} to="/projects">
-      PROJECTS
-    </Link>
-    <Link activeClassName={activeNavLink} className={navLink} to="/skills">
-      SKILLS
-    </Link>
-  </div>
-)
-    }
+      <Link activeClassName={activeNavLink} className={navLink} to="/projects">
+        PROJECTS
+      </Link>
+      <Link activeClassName={activeNavLink} className={navLink} to="/skills">
+        SKILLS
+      </Link>
+    </div>
+  )
+}
 
 // margin-bottom: ${rhythm(1.5)};

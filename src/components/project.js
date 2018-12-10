@@ -1,36 +1,54 @@
 import React from 'react'
 import { css } from 'emotion'
-import { rhythm } from '../utils/typography'
 
 export default ({ imageUrl, projectTitle }) => {
+  const imageStyle = css`
+    display: block;
+    height: auto;
+    width: 400px;
+  `
+
+  const overlay = css`
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008cba;
+    overflow: hidden;
+    width: 400px;
+    height: 0;
+    transition: 0.5s ease;
+  `
   const projectContainer = css`
-    text-align: center;
-    padding: ${rhythm(1)};
-  `
-
-  const imageContainer = css`
-    height: 300px;
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 10px 2px #ffcb47;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${imageUrl});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  `
-
-  const headingInImage = css`
-    color: #191716;
     position: relative;
-    top: 20%;
-    font-size: 36px;
-    font-weight: bold;
+    margin: 0 auto;
+    width: 400px;
+    :hover .${overlay} {
+      bottom: 0;
+      height: 100%;
+    }
+  `
+
+  const text = css`
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   `
 
   return (
-    <div className={projectContainer}>
-      <div className={imageContainer}>
-        <h3 className={headingInImage}>{projectTitle}</h3>
+    <div>
+      <h3>{projectTitle}</h3>
+      <div className={projectContainer}>
+        <img className={imageStyle} src={imageUrl} alt={projectTitle} />
+        <div className={overlay}>
+          <div className={text}>Hello World</div>
+        </div>
       </div>
     </div>
   )

@@ -29,7 +29,7 @@ export default () => (
       {/* First Column */}
       <div>
         <Project
-          projectTitle="Bread Baker's Apprentice"
+          projectTitle="🥖 Bread Baker's Apprentice"
           imageUrl={bread}
           liveSiteLink="https://github.com/ellymaimon/bread-bakers-apprentice"
           liveSiteLinkText="Check out the Github repo"
@@ -37,7 +37,7 @@ export default () => (
           technologies="React Redux SemanticUI"
         />
         <Project
-          projectTitle="Circa"
+          projectTitle="📊 Circa"
           imageUrl={circa}
           liveSiteLink="https://vimeo.com/305578330"
           liveSiteLinkText="Check out a quick sample"
@@ -45,7 +45,7 @@ export default () => (
           technologies="NodeJS React Firestore"
         />
         <Project
-          projectTitle="Citrus Ciderhouse"
+          projectTitle="🍋 Citrus Ciderhouse"
           imageUrl={citrus}
           liveSiteLink="https://angular-team-week.firebaseapp.com/"
           liveSiteLinkText="Check out the live site"
@@ -57,7 +57,7 @@ export default () => (
       {/* Second Column */}
       <div>
         <Project
-          projectTitle="What's On Tap?"
+          projectTitle="🍺 What's On Tap?"
           imageUrl={whatsOnTap}
           liveSiteLink="http://whats-on-tap-app.herokuapp.com/"
           liveSiteLinkText="Check out the live site"
@@ -65,7 +65,7 @@ export default () => (
           technologies="C# .NET Entity MySQL"
         />
         <Project
-          projectTitle="Dungeon Escape"
+          projectTitle="🧙‍♂️ Dungeon Escape"
           imageUrl={dungeonEscape}
           liveSiteLink="https://ellymaimon.github.io/Dungeon-Escape/"
           liveSiteLinkText="Play the game! (turn on volume)"

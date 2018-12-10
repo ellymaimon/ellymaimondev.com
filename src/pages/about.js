@@ -26,7 +26,7 @@ export default () => (
         text-align: center;
       `}
     >
-      Hey there, I'm Elly Maimon! 👋
+      Hey there, I'm Elly Maimon! <span role="img" aria-label="Waving hand emoji">👋</span>
     </h1>
 
     <div className={imgDiv}>

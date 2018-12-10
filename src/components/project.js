@@ -31,7 +31,7 @@ export default ({
     position: relative;
     margin: 0 auto;
     width: 400px;
-    
+
     :hover .${overlay} {
       bottom: 0;
       height: 100%;
@@ -63,8 +63,14 @@ export default ({
   `
 
   return (
-    <div>
-      <h3 className={css`margin-bottom: 0.5em;`}>{projectTitle}</h3>
+    <div className={css`margin-bottom: 2em;`}>
+      <h3
+        className={css`
+          margin-bottom: 0.5em;
+        `}
+      >
+        {projectTitle}
+      </h3>
       <div className={projectContainer}>
         <img className={imageStyle} src={imageUrl} alt={projectTitle} />
         <div className={overlay}>

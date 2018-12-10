@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { css } from 'emotion'
 import Navigation from '../components/navigation'
+import Project from '../components/project'
+import { css } from 'emotion'
 import { rhythm } from '../utils/typography'
 import whatsOnTap from '../images/bars.png'
 import dungeonEscape from '../images/dungeon.png'
@@ -18,56 +19,20 @@ const container = css`
   margin: ${rhythm(2)} auto;
 `
 
-const projectContainer = css`
-  text-align: center;
-  padding: ${rhythm(1)};
-`
-
-const image = css`
-  height: 50vh;
-  max-height: 300px;
-  width: 50vw;
-  max-width: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  margin: 0 auto;
-  box-shadow: 0px 0px 10px 2px #ffcb47;
-`
-
 export default () => (
   <Layout>
     <Navigation showHome="true" />
     <div className={container}>
+      {/* First Column */}
       <div>
-        <div className={projectContainer}>
-          <h3>What's On Tap?</h3>
-          <div
-            className={image}
-            style={{ backgroundImage: `url(${whatsOnTap})` }}
-          />
-        </div>
-        <div className={projectContainer}>
-          <h3>Dunegon Escape</h3>
-          <div
-            className={image}
-            style={{ backgroundImage: `url(${dungeonEscape})` }}
-          />
-        </div>
+        <Project projectTitle="What's On Tap?" imageUrl={whatsOnTap} />
+        <Project projectTitle="Dungeon Escape" imageUrl={dungeonEscape} />
       </div>
 
+      {/* Second Column */}
       <div>
-        <div className={projectContainer}>
-          <h3>Circa</h3>
-          <div className={image} style={{ backgroundImage: `url(${circa})` }} />
-        </div>
-        <div className={projectContainer}>
-          <h3>Citrus Ciderhouse</h3>
-          <div
-            className={image}
-            style={{ backgroundImage: `url(${citrus})` }}
-          />
-        </div>
+        <Project projectTitle="Circa" imageUrl={circa} />
+        <Project projectTitle="Citrus Ciderhouse" imageUrl={citrus} />
       </div>
     </div>
   </Layout>

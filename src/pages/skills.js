@@ -23,7 +23,9 @@ export default () => (
       <span className={spanStyle}>HTML / CSS / JavaScript(ES6) / C# (.NET)</span>
       <span className={spanStyle}>React / Redux / Angular / Vue</span>
       <span className={spanStyle}>Node.js / Express / GraphQL / MySQL</span>
+      <span className={spanStyle}>Amazon Web Services / Lambda / DynamoDB / S3</span>
       <span className={spanStyle}>Firebase / Firestore / Google APIs</span>
+      <span className={spanStyle}>CMS / Drupal / Wordpress</span>
       <span className={spanStyle}>Photoshop / Illustrator / InDesign</span>
       <span className={spanStyle}>Semantic UI / Material UI</span>
     </div>

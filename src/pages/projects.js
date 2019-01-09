@@ -9,6 +9,7 @@ import dungeonEscape from '../images/dungeon.png'
 import circa from '../images/circa.png'
 import citrus from '../images/citrus.png'
 import bread from '../images/bread.png'
+import awscratch from '../images/awscratch.png'
 
 const container = css`
   display: grid;
@@ -45,18 +46,6 @@ export default () => (
           technologies="NodeJS React Firestore"
         />
         <Project
-          projectTitle="🍋 Citrus Ciderhouse"
-          imageUrl={citrus}
-          liveSiteLink="https://angular-team-week.firebaseapp.com/"
-          liveSiteLinkText="Check out the live site"
-          description="CMS for a fictional Cider Bar"
-          technologies="Angular TypeScript Firebase"
-        />
-      </div>
-
-      {/* Second Column */}
-      <div>
-        <Project
           projectTitle="🍺 What's On Tap?"
           imageUrl={whatsOnTap}
           liveSiteLink="http://whats-on-tap-app.herokuapp.com/"
@@ -64,6 +53,19 @@ export default () => (
           description="Find and maintain a list of your favorite beers"
           technologies="C# .NET Entity MySQL"
         />
+      </div>
+
+      {/* Second Column */}
+      <div>
+        <Project
+          projectTitle="📝 AWScratch"
+          imageUrl={awscratch}
+          liveSiteLink="http://d2p3vrik0bqcra.cloudfront.net/"
+          liveSiteLinkText="Check out the live site"
+          description="Note taking app showcasing AWS skills"
+          technologies="AWS Lambda S3 DynamoDB Cloudfront IAM"
+        />
+
         <Project
           projectTitle="🧙‍♂️ Dungeon Escape"
           imageUrl={dungeonEscape}
@@ -71,6 +73,14 @@ export default () => (
           liveSiteLinkText="Play the game! (turn on volume)"
           description="A 2D point-and-click RPG adventure game"
           technologies="VanillaJS jQuery Photoshop"
+        />
+        <Project
+          projectTitle="🍋 Citrus Ciderhouse"
+          imageUrl={citrus}
+          liveSiteLink="https://angular-team-week.firebaseapp.com/"
+          liveSiteLinkText="Check out the live site"
+          description="CMS for a fictional Cider Bar"
+          technologies="Angular TypeScript Firebase"
         />
       </div>
     </div>

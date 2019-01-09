@@ -11,7 +11,7 @@ export default ({
 }) => {
   const imageStyle = css`
     display: block;
-    height: auto;
+    height: 250px;
     width: 400px;
   `
 
